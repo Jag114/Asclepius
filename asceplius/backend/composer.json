@@ -1,0 +1,33 @@
+{
+	"_comment": "oco tu chodzi lol",
+
+
+    "name": "damianfelisiak/backend",
+	"name1": "jakubgaj/backend"
+	"name2": "szymonwisniewski/backend"
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "App/"
+        }
+    },
+    "authors": [
+        {
+            "name": "damian.felisiak",
+            "email": "damianfel7@gmail.com"
+        }
+		{
+			"name": "jakub.gaj",
+			"email": "jag114@wp.pl"
+		}
+		{
+			"name": "szymon.wisniewski",
+			"email": "szymon270602@gmail.com"
+		}
+    ],
+    "require": {
+        "ext-pdo": "*"
+    }
+}
+
+
