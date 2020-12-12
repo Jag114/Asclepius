@@ -2,7 +2,8 @@
 
 entity patient
 {
-*pesel
+*id
+*pesel: int
 *name: text
 *lastname: text
 *email: text
