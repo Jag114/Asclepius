@@ -23,6 +23,7 @@ CREATE TABLE IF NOT EXISTS asclepius.doctor
     name			TEXT	   NOT NULL,
 	lastname		TEXT	   NOT NULL,
 	email			TEXT	   NOT NULL,
+	password	  	TEXT       NOT NULL,
 	phone			INT		   NOT NULL,
 	hospital_id		BIGINT		UNSIGNED   NOT NULL,
 	office_number	SMALLINT   NOT NULL,

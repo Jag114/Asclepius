@@ -27,6 +27,7 @@ entity doctor
 *name: text
 *lastname: text
 *email: text
+*password: text
 *phone: int
 *hospital_id: int
 *office_number: smallint
