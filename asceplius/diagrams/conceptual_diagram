@@ -28,6 +28,7 @@ entity doctor
 *lastname
 *email
 *phone
+*password
 *hospital_id
 *office_number
 *spec
