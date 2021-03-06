@@ -5,22 +5,20 @@ use App\Database\Entity\Entity;
 class UserEntity extends Entity {
 	
 	private $id;
-	private $name;
-	private $lastname;
+	private $username;
 	private $password_hash;
-	private $email;
 	
 	
 	public function getId() {
 		return $this->id;
 	}
 	
-	public function getName() {
-		return $this->name;
+	public function getUsername() {
+		return $this->username;
 	}
 	
-	public function setName($name) {
-		$this->name = $name;
+	public function setUsername($username) {
+		$this->username = $username;
 	}
 	
 	public function getPasswordHash() {
@@ -31,20 +29,5 @@ class UserEntity extends Entity {
 		$this->password_hash = $password_hash;
 	}
 	
-	public function getEmail() {
-		return $this->email;
-	}
-	
-	public function setEmail($email) {
-		$this->email = $email;
-	}
-	
-	public function getLastname() {
-		return $this->lastname;
-	}
-	
-	public function setLastname($lastname) {
-		$this->lastname = $lastname;
-	}
 }
 ?>
