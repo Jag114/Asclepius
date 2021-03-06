@@ -27,7 +27,7 @@
 		 * @Action(method="GET")
 		 */
 		public function getUsers() {
-			echo json_encode(array("test" => "tdgdfgdfgest"));
+			echo json_encode(array("test" => "hahaxd"));
 		}
 
 		/**
