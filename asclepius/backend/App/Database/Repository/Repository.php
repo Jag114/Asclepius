@@ -33,11 +33,7 @@ abstract class Repository {
         return $query->fetch();
     }
 
-    /**
-     * @param Entity $object
-     * @return null
-     * @throws \ReflectionException
-     */
+
     public function save(Entity $object) {
 
         $result = null;

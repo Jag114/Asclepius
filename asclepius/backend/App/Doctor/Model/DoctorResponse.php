@@ -1,12 +1,12 @@
 <?php
 
 
-	namespace App\Patient\Model;
+	namespace App\Doctor\Model;
 
-	class UserResponse {
+	class DoctorResponse {
 
 		private $id;
-		private $username;
+		private $email;
 
 		/**
 		 * @return mixed
@@ -26,18 +26,17 @@
 		/**
 		 * @return mixed
 		 */
-		public function getUsername() {
-			return $this->username;
+		public function getEmail() {
+			return $this->email;
 		}
 
 		/**
-		 * @param mixed $username
+		 * @param mixed $email
 		 */
-		public function setUsername($username) {
-			$this->username = $username;
+		public function setEmail($email) {
+			$this->pesel = $email;
 			return $this;
 		}
 
 		
 	}
-?>

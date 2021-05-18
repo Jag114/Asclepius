@@ -1,23 +1,23 @@
 <?php
-	namespace App\Patient\Model;
+	namespace App\Doctor\Model;
 
-	class UserRequest {
+	class DoctorRequest {
 
-		private $username;
+		private $email;
 		private $password;
 
 		/**
 		 * @return mixed
 		 */
-		public function getUsername() {
-			return $this->username;
+		public function getEmail() {
+			return $this->email;
 		}
 
 		/**
-		 * @param mixed $username
+		 * @param mixed $email
 		 */
-		public function setUsername($username) {
-			$this->username = $username;
+		public function setUsername($email) {
+			$this->email = $email;
 		}
 
 		/**
@@ -34,4 +34,3 @@
 			$this->password = $password;
 		}
 	}
-?>

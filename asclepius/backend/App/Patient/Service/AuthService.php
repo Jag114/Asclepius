@@ -2,28 +2,27 @@
 	namespace App\Patient\Service;
 
 	use App\Helpers\JwtHelper;
-	use App\User\Model\Token;
+	use App\Patient\Model\Token;
 
 	class AuthService {
 
-		private $userService;
+		private $patientService;
 
 		/**
 		 * AuthService constructor.
 		 */
 		public function __construct() {
-			$this->userService = new PatientService();
+			$this->patientService = new PatientService();
 		}
 
-		public function login($username, $password) {
+		public function login($pesel, $password) {
 
-			$isUserExists = $this->userService->isUserWithPasswordExists($username, $password);
+			$isPatientExists = $this->userService->isPatientWithPasswordExists($pesel, $password);
 
-			if ($isUserExists) {
-				return new Token(JwtHelper::generateUserToken($username));
+			if ($isPatientExists) {
+				return new Token(JwtHelper::generatePatientToken($pesel));
 			}
 
 			return null;
 		}
-	}	
-?>
+	}

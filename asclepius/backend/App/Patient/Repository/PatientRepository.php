@@ -1,7 +1,7 @@
 <?php namespace App\Patient\Repository;
 
 
-use App\Database\DatabaseConnector;
+use App\Database\Connector;
 use App\Database\Repository\Repository;
 use App\Patient\Entity\PatientEntity;
 use PDO;
@@ -17,15 +17,15 @@ class PatientRepository extends Repository {
     }
 
     /**
-     * @param $username
+     * @param $pesel
      * @param $password
      * @return PatientEntity | bool
      */
-    public function getUserByUsernameAndPassword($username, $password) {
+    public function getPatientByPeselAndPassword($pesel, $password) {
         $query = $this->prepare("Select * from " . $this->getTableName() . " where pesel=:pesel and password=:password");
 
         $query->execute(array(
-            ":pesel" => $username,
+            ":pesel" => $pesel,
             ":password" => sha1($password)
         ));
 
