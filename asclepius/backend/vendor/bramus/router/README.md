@@ -274,7 +274,7 @@ If most/all of your handling classes are in one and the same namespace, you can 
 
 ```php
 $router->setNamespace('\App\Controllers');
-$router->get('/users/(\d+)', 'User@showProfile');
+$router->get('/users/(\d+)', 'Patient@showProfile');
 $router->get('/cars/(\d+)', 'Car@showProfile');
 ```
 

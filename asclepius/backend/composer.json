@@ -1,0 +1,30 @@
+{
+	"_comment": "oco tu chodzi lol",
+
+
+    "name": "damianfelisiak/backend",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "App/"
+        }
+    },
+    "authors": [
+        {
+            "name": "damian.felisiak",
+            "email": "damianfel7@gmail.com"
+        }
+    ],
+    "require": {
+        "ext-pdo": "*",
+	"bramus/router": "~1.5",
+        "ext-json": "*",
+        "zeptech/annotations": "^1.1",
+        "haydenpierce/class-finder": "^0.4.3",
+        "symfony/serializer": "v3.3.0",
+        "symfony/property-access": "v3.3.0",
+        "firebase/php-jwt": "^5.2"
+    }
+}
+
+

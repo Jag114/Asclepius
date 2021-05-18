@@ -1,0 +1,82 @@
+@startuml
+
+entity patient
+{
+*id
+*name
+*lastname
+*email
+*phone
+*street_name
+*street_number
+*flat_number
+*city
+*postal_code
+*country
+*pesel
+*password
+*patient_card_id
+*gender
+*age
+*doctor_id
+}
+
+entity doctor
+{
+*id
+*name
+*lastname
+*email
+*phone
+*password
+*hospital_id
+*office_number
+*spec
+}
+
+entity hospital
+{
+*id
+*name
+*street_name
+*street_number
+*city
+*postal_code
+*country
+}
+
+entity patient_card
+{
+*id
+*info_id
+*hospital_id
+}
+
+entity pc_info
+{
+*id
+*patient_id
+*illness
+*date_of_visit
+*doctor_id
+*drugs_in_use
+}
+
+entity perscription{
+*id
+*patient_id
+*doctor_id
+*drug_name
+*quantity
+*dosage
+}
+
+patient ||..|| patient_card
+patient_card ||..|{ pc_info
+doctor ||..|{ pc_info
+hospital ||..|{ doctor
+doctor ||..|{ perscription
+patient ||..|{ perscription
+hospital ||..|{ patient_card
+
+@enduml
