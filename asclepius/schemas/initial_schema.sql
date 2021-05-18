@@ -25,13 +25,13 @@ CREATE TABLE IF NOT EXISTS asclepius.doctor
 	email			TEXT	   NOT NULL,
 	password	  	TEXT       NOT NULL,
 	phone			INT		   NOT NULL,
-	hospital_id		BIGINT		UNSIGNED   NOT NULL,
+	hospital_id		BIGINT		/* UNSIGNED */  NOT NULL,
 	office_number	SMALLINT   NOT NULL,
-	spec_id			BIGINT		UNSIGNED   NOT NULL,
+	spec_id			BIGINT	/*	UNSIGNED */  NOT NULL
 	
 
-    FOREIGN KEY (hospital_id) REFERENCES asclepius.hospital (id),
-	FOREIGN KEY (spec_id) REFERENCES asclepius.spec (id)
+    -- FOREIGN KEY (hospital_id) REFERENCES asclepius.hospital (id),
+	-- FOREIGN KEY (spec_id) REFERENCES asclepius.spec (id)
 );
 
 CREATE TABLE IF NOT EXISTS asclepius.patient

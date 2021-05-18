@@ -1,4 +1,4 @@
-<?php
+<?php namespace App\Doctor\Repository;
 
 use App\Database\Connector;
 use App\Database\Repository\Repository;
